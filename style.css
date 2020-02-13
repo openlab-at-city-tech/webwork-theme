@@ -46,6 +46,10 @@ body.is-webwork-app .post-content ul {
 	margin-left: inherit;
 }
 
+body.is-webwork-app .post-content li {
+	line-height: inherit;
+}
+
 body.is-webwork-app .post-content .ww-author-name {
 	margin-bottom: .5em;
 }
