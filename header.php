@@ -20,7 +20,7 @@
 			<div class="header-cover section bg-dark-light no-padding" role="banner">
 
 				<div class="header section">
-					<img class="banner-img" src="<?php echo get_stylesheet_directory_uri() . '/images/OLWW_BANNER.png'; ?>" alt="OpenLab WeBWorK logo" />
+					<img class="banner-img" src="<?php header_image(); ?>" alt="<?php echo esc_attr( sprintf( __( '%s Logo', 'webwork-theme' ), get_option( 'blogname' ) ) ); ?>" />
 				</div> <!-- /header -->
 
 				<h1 class="screen-reader-text">OpenLab WeBWorK</h1>

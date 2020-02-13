@@ -8,6 +8,21 @@ function webwork_theme_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'webwork_theme_assets' );
 
+/**
+ * Theme setup.
+ */
+function webwork_theme_setup_theme() {
+	add_theme_support(
+		'custom-header',
+		[
+			'default-image' => get_stylesheet_directory_uri() . '/images/OLWW_BANNER.png',
+			'height' => 211,
+			'width'  => 971,
+		]
+	);
+}
+add_action( 'after_setup_theme', 'webwork_theme_setup_theme' );
+
 // Add 'ol-webwork' class to body for style overrides.
 add_filter( 'body_class', function( $class ) {
 	$class[] = 'ol-webwork';
