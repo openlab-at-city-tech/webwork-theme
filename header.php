@@ -23,7 +23,7 @@
 					<img class="banner-img" src="<?php header_image(); ?>" alt="<?php echo esc_attr( sprintf( __( '%s Logo', 'webwork-theme' ), get_option( 'blogname' ) ) ); ?>" />
 				</div> <!-- /header -->
 
-				<h1 class="screen-reader-text">OpenLab WeBWorK</h1>
+				<h1 class="screen-reader-text"><?php echo esc_html( get_option( 'blogname' ) ); ?></h1>
 
 			</div> <!-- /bg-dark -->
 
