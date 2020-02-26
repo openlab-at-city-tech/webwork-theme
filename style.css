@@ -61,16 +61,11 @@ body.is-webwork-app .post-content p.ww-question-gloss {
 .header-cover {
 	overflow: hidden;
 }
+
 body.is-webwork-app .header {
 	max-height: 211px;
 	padding: 0;
 	width: 200%;
-}
-@media (max-width: 800px) {
-	body.is-webwork-app .header {
-		width: 100%;
-		margin-left: 0;
-	}
 }
 
 body .blog-menu {
@@ -227,6 +222,13 @@ body.is-webwork-app .oplb-bs a#go-to-top .fa-chevron-circle-up:before {
 	line-height: 18pt;
 }
 
+@media (max-width: 1200px) {
+	body.is-webwork-app .section-inner,
+	body.is-webwork-app .post-content .section-inner {
+		max-width: 95%;
+	}
+}
+
 @media (max-width: 800px) {
 	.nav-toggle .bar,
 	.search-toggle .metal,
@@ -251,6 +253,11 @@ body.is-webwork-app .oplb-bs a#go-to-top .fa-chevron-circle-up:before {
 	.widget-content,
 	.widget-title {
 		font-size: 1.5rem;
+	}
+
+	body.is-webwork-app .header {
+		width: 100%;
+		margin-left: 0;
 	}
 }
 
