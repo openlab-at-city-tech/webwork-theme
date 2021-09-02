@@ -12,12 +12,24 @@ add_action( 'wp_enqueue_scripts', 'webwork_theme_assets' );
  * Theme setup.
  */
 function webwork_theme_setup_theme() {
+	$default_header_url = get_stylesheet_directory_uri() . '/images/OLWW_BANNER.png';
+
 	add_theme_support(
 		'custom-header',
 		[
-			'default-image' => get_stylesheet_directory_uri() . '/images/OLWW_BANNER.png',
-			'height' => 211,
-			'width'  => 971,
+			'default-image' => $default_header_url,
+			'height'        => 211,
+			'width'         => 971,
+		]
+	);
+
+	register_default_headers(
+		[
+			'webworkqa-logo' => [
+				'url'           => $default_header_url,
+				'thumbnail_url' => $default_header_url,
+				'description'   => __( 'WeBWorK Q&A Logo', 'webwork-theme' ),
+			],
 		]
 	);
 }

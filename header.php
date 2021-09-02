@@ -19,8 +19,10 @@
 
 			<div class="header-cover section bg-dark-light no-padding" role="banner">
 
+				<?php $header_image_url = get_header_image() ? get_header_image() : get_template_directory_uri() . '/assets/images/header.jpg'; ?>
+
 				<div class="header section">
-					<img class="banner-img" src="<?php header_image(); ?>" alt="<?php echo esc_attr( sprintf( __( '%s Logo', 'webwork-theme' ), get_option( 'blogname' ) ) ); ?>" />
+					<img class="banner-img" src="<?php echo esc_attr( $header_image_url ); ?>" alt="<?php echo esc_attr( sprintf( __( '%s Logo', 'webwork-theme' ), get_option( 'blogname' ) ) ); ?>" />
 				</div> <!-- /header -->
 
 				<h1 class="screen-reader-text"><?php echo esc_html( get_option( 'blogname' ) ); ?></h1>
