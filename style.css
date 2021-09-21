@@ -20,11 +20,13 @@ Version:        0.1.0
 	background: #b4c5e0 !important;
 }
 
-body a, body.is-webwork-app a {
+body a,
+body.ol-webwork a,
+body.is-webwork-app a {
 	color: #0044af;
 }
 
-.searchform #searchsubmit {
+body .searchform #searchsubmit {
 	background-color: #0044af;
 }
 
