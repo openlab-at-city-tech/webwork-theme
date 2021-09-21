@@ -20,11 +20,15 @@ Version:        0.1.0
 	background: #b4c5e0 !important;
 }
 
-a, body.is-webwork-app a {
+body a, body.is-webwork-app a {
 	color: #0044af;
 }
 
-a:hover, body.is-webwork-app a:hover {
+.searchform #searchsubmit {
+	background-color: #0044af;
+}
+
+body a:hover, body.is-webwork-app a:hover {
 	color: #000;
 }
 
