@@ -26,6 +26,7 @@ body.is-webwork-app a {
 	color: #0044af;
 }
 
+body .search-form .search-submit,
 body .searchform #searchsubmit {
 	background-color: #0044af;
 }
